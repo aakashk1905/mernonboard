@@ -98,6 +98,7 @@ const Register = ({ setShowSign, setShowLogin }) => {
             email,
             password,
             mobile,
+            mern: true,
           }),
         }
       );
