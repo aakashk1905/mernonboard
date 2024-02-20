@@ -1,0 +1,135 @@
+.menu-cont {
+  width: 245px;
+  height: 100svh;
+  background: #0d110c;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 24px 24px;
+
+  position: fixed;
+  right: 0;
+  top: 0;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    right: -245px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.menu-cont.show {
+  right: 0; /* Move the menu into view when the 'show' class is added */
+}
+
+.menu-top-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 46px;
+}
+.menu-close-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 46px;
+  width: 100%;
+}
+.menu-close-cont svg {
+  cursor: pointer;
+}
+
+.menu-sections-cont {
+  display: flex;
+  width: 197px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.menu-section {
+  cursor: pointer;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+}
+.menu-section span {
+  cursor: pointer;
+  color: #4d4d4d;
+  font-family: Archivo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.menu-section svg path {
+  color: #4d4d4d;
+  fill: #4d4d4d;
+}
+.menu-section-active svg path {
+  color: #0d110c;
+  fill: #0d110c;
+}
+
+.menu-section-active {
+  border-radius: 12px;
+  color: #0d110c;
+  background: #fed12e;
+}
+
+.memu-bottom-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-avatar-cont {
+  cursor: pointer;
+  display: flex;
+  width: 197px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  background: #131612;
+  overflow: hidden;
+  color: #fff;
+  text-overflow: ellipsis;
+  font-family: Archivo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.menu-login-cont {
+  cursor: pointer;
+  display: flex;
+  width: 197px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid #ff5a5a;
+
+  color: #ff5a5a;
+  font-family: Archivo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
