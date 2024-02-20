@@ -110,8 +110,8 @@ const Register = ({ setShowSign, setShowLogin }) => {
         Cookies.remove("getdata");
         setShowSign(false);
         setShowLogin(false);
-        Cookies.set("user_name", data.user.name);
-        Cookies.set("user_email", data.user.email);
+        Cookies.set("user_name", data.newUser.name);
+        Cookies.set("user_email", data.newUser.email);
         window.location.reload();
       } else {
         alert(data.error);

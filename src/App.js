@@ -41,6 +41,7 @@ function App() {
             window.location.reload();
           } else {
             setShowLogin(true);
+            setShowSign(true);
           }
         }
       } catch (error) {
@@ -51,6 +52,7 @@ function App() {
     fetchData();
     if (!email) {
       setShowLogin(true);
+      setShowSign(true);
     }
   }, []);
   if (showSign)
