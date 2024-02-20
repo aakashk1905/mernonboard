@@ -63,7 +63,7 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route path="/mern/onboard">
+            <Route path="/onboard">
               <Route path="" element={<Dashboard />} />
             </Route>
           </Routes>
