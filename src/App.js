@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Dashboard from "./Components/Dashboard";
-import Login from "./Components/User/Login";
-import Register from "./Components/User/Register";
+// import Login from "./Components/User/Login";
+// import Register from "./Components/User/Register";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cookies from "js-cookie";
 
@@ -55,10 +55,14 @@ function App() {
       setShowSign(true);
     }
   }, []);
-  if (showSign)
-    return <Register setShowLogin={setShowLogin} setShowSign={setShowSign} />;
-  if (showLogin)
-    return <Login setShowLogin={setShowLogin} setShowSign={setShowSign} />;
+  if (showSign || showLogin) {
+    window.location.href = `https://${window.location.hostname}/onboard`;
+    return ` Not Logged in!!!!! 
+    returning to https://${window.location.hostname}/onboard....`;
+  }
+  //   return <Register setShowLogin={setShowLogin} setShowSign={setShowSign} />;
+  // if (showLogin)
+  //   return <Login setShowLogin={setShowLogin} setShowSign={setShowSign} />;
 
   return (
     <div>
