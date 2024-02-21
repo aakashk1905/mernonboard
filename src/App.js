@@ -56,9 +56,9 @@ function App() {
     }
   }, []);
   if (showSign || showLogin) {
-    window.location.href = `https://${window.location.hostname}/onboard`;
+    window.location.href = `https://${window.location.hostname}/mern?register=true`;
     return ` Not Logged in!!!!! 
-    returning to https://${window.location.hostname}/onboard....`;
+    returning to https://${window.location.hostname}/mern....`;
   }
   //   return <Register setShowLogin={setShowLogin} setShowSign={setShowSign} />;
   // if (showLogin)
