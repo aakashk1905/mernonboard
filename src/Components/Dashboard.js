@@ -33,7 +33,7 @@ const Dashboard = () => {
             className="st-wp-join"
             onClick={() =>
               window.open(
-                "https://chat.whatsapp.com/K5khC7yDykQ4uue9g2UZKX",
+                "https://chat.whatsapp.com/BhgA7GcBedGJVRqJASg651",
                 "_blank"
               )
             }
