@@ -11,7 +11,7 @@ function App() {
   const [showSign, setShowSign] = useState(false);
 
   useEffect(() => {
-    const email = Cookies.get("user_email");
+    const email = Cookies.get("onboarded_user_email");
 
     const queryParams = new URLSearchParams(window.location.search);
     const email1 = queryParams.get("email");
@@ -60,10 +60,7 @@ function App() {
     return ` Not Logged in!!!!! 
     returning to https://${window.location.hostname}/mern....`;
   }
-  //   return <Register setShowLogin={setShowLogin} setShowSign={setShowSign} />;
-  // if (showLogin)
-  //   return <Login setShowLogin={setShowLogin} setShowSign={setShowSign} />;
-
+ 
   return (
     <div>
       <div>

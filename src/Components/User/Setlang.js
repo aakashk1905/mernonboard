@@ -7,7 +7,7 @@ import logo from "../../Assests/logo1.png";
 
 const Setlang = ({ setUser }) => {
   const [selectedLanguage, setSelectedLanguage] = useState("");
-    const email = Cookies.get("user_email");
+    const email = Cookies.get("onboarded_user_email");
   async function loginUser(event) {
     event.preventDefault();
     if (!selectedLanguage) {
