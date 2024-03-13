@@ -299,3 +299,29 @@
   font-weight: 500;
   line-height: 123.488%;
 }
+.st-wp-join {
+  display: none;
+}
+.st-wp-join-btm {
+  display: flex;
+}
+.mob-campus-cta {
+  display: none;
+}
+.mob-campus-cta-top {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .mob-campus-cta {
+    display: flex;
+  }
+  .mob-campus-cta-top {
+    display: none;
+  }
+  .st-wp-join {
+    display: flex;
+  }
+  .st-wp-join-btm {
+    display: none;
+  }
+}
