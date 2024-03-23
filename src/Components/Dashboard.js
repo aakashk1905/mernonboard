@@ -52,7 +52,7 @@ const Dashboard = () => {
             className="st-wp-join"
             onClick={() =>
               window.open(
-                "https://chat.whatsapp.com/FQOGmjdl8xR7PFGNVesuBq",
+                "https://chat.whatsapp.com/F6irqUAuaF72LWp8z2HnXw",
                 "_blank"
               )
             }
@@ -116,7 +116,7 @@ const Dashboard = () => {
               className="st-wp-join st-wp-join-btm"
               onClick={() =>
                 window.open(
-                  "https://chat.whatsapp.com/FQOGmjdl8xR7PFGNVesuBq",
+                  "https://chat.whatsapp.com/F6irqUAuaF72LWp8z2HnXw",
                   "_blank"
                 )
               }
